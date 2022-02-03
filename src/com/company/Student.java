@@ -1,13 +1,6 @@
 package com.company;
 
 public class Student {
-    public String getTuulganKyny() {
-        return tuulganKyny;
-    }
-
-    public void setTuulganKyny(String tuulganKyny) {
-        this.tuulganKyny = tuulganKyny;
-    }
 
     public String getAty() {
         return aty;
@@ -15,14 +8,6 @@ public class Student {
 
     public void setAty(String aty) {
         this.aty = aty;
-    }
-
-    public String getFamiliyasy() {
-        return familiyasy;
-    }
-
-    public void setFamiliyasy(String familiyasy) {
-        this.familiyasy = familiyasy;
     }
 
     public int getJashy() {
@@ -34,8 +19,26 @@ public class Student {
         this.jashy = jashy;
     }
 
-    private String tuulganKyny;
+
     private String aty;
-    private String familiyasy;
     private int jashy;
+
+    public String getGruppa() {
+        return gruppa;
+    }
+
+    public void setGruppa(String gruppa) {
+        this.gruppa = gruppa;
+    }
+
+    private String gruppa;
+    void okuit() {System.out.println("Bilim alat");}
+    void tapshyrmaAtkarat() {System.out.println("Tapshyrma atkarat");}
+
+    public void showInfo() {
+        System.out.println("info");
+        System.out.println("name = " + aty);
+        System.out.println("age = " + jashy);
+        System.out.println("group = " + gruppa);
+    }
 }
